@@ -7,8 +7,9 @@ kubernetes:
     providerVersion: "v2"
     permissions: {}
     dockerRegistries: []
+    kubeconfigFile: "configserver:kubeCfg_default"
     configureImagePullSecrets: true
-    serviceAccount: true
+    serviceAccount: false
     cacheThreads: 1
     namespaces:
     - "default"
@@ -20,3 +21,4 @@ kubernetes:
     customResources: []
     cachingPolicies: []
     onlySpinnakerManaged: true
+    checkPermissionsOnStartup: false
